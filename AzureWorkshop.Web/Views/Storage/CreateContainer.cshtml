@@ -1,0 +1,15 @@
+﻿@model AzureWorkshop.Web.Models.Storage.CreateContainerViewModel
+
+<form asp-action="CreateContainer" method="post">
+    <div class="row">
+        <div class="col-6 offset-6">
+            <div class="input-group mb-3">
+                <input asp-for="ContainerName" class="form-control" />
+                <button class="btn btn-primary" type="submit">Create Container</button>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="alert alert-primary" role="alert">
+    <p>Container name can only contain lower case letters and numbers. No spaces, hyphens, etc.</p>
+</div>
